@@ -58,7 +58,7 @@ systemctl enable nginx
   EOF
 
   tags = {
-    Name = "OpenText Central NGINX-${count.index + 1}"
+    Name = "OpenText West NGINX-${count.index + 1}"
   }
 
 }
@@ -73,7 +73,7 @@ resource "aws_instance" "west_private_instance" {
   associate_public_ip_address = false
 
   tags = {
-    Name = "OpenText Central Private Instance"
+    Name = "OpenText West Private Instance"
   }
 
 }
