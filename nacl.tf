@@ -21,7 +21,7 @@ resource "aws_network_acl" "central_public" {
   }
 
   tags = {
-    Name = "main"
+    Name = "OpenText Central NACL"
   }
 }
 
@@ -48,6 +48,6 @@ resource "aws_network_acl" "west_public" {
   }
 
   tags = {
-    Name = "main"
+    Name = "OpenText West NACL"
   }
 }
