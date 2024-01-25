@@ -8,6 +8,7 @@ resource "aws_subnet" "central_public_subnet" {
   ]
   tags = {
     Name = "OpenText Central Public Subnet"
+    Environment = var.environment
   }
 }
 
@@ -21,6 +22,7 @@ resource "aws_subnet" "central_private_subnet" {
   ]
   tags = {
     Name = "OpenText Central Private Subnet"
+    Environment = var.environment
   }
 }
 
@@ -34,6 +36,7 @@ resource "aws_subnet" "west_public_subnet" {
   ]
   tags = {
     Name = "OpenText West Public Subnet"
+    Environment = var.environment
   }
 }
 
@@ -47,5 +50,6 @@ resource "aws_subnet" "west_private_subnet" {
   ]
   tags = {
     Name = "OpenText West Private Subnet"
+    Environment = var.environment
   }
 }

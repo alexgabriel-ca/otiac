@@ -22,6 +22,7 @@ resource "aws_network_acl" "central_public" {
 
   tags = {
     Name = "OpenText Central NACL"
+    Environment = var.environment
   }
 }
 
@@ -49,5 +50,6 @@ resource "aws_network_acl" "west_public" {
 
   tags = {
     Name = "OpenText West NACL"
+    Environment = var.environment
   }
 }

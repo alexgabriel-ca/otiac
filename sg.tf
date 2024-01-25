@@ -17,6 +17,7 @@ resource "aws_security_group" "central_web_sg" {
   }
   tags = {
     Name = "OpenText Central HTTP"
+    Environment = var.environment
   }
 }
 
@@ -41,6 +42,7 @@ resource "aws_security_group" "central_private_sg" {
   }
   tags = {
     Name = "OpenText Central Private SG"
+    Environment = var.environment
   }
 }
 
@@ -63,6 +65,7 @@ resource "aws_security_group" "west_web_sg" {
   }
   tags = {
     Name = "OpenText West HTTP"
+    Environment = var.environment
   }
 }
 
@@ -87,5 +90,6 @@ resource "aws_security_group" "west_private_sg" {
   }
   tags = {
     Name = "OpenText West Private SG"
+    Environment = var.environment
   }
 }

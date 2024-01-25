@@ -19,6 +19,7 @@ systemctl enable httpd
 
   tags = {
     Name = "OpenText Central Apache-${count.index + 1}"
+    Environment = var.environment
   }
 
 }
@@ -34,6 +35,7 @@ resource "aws_instance" "central_private_instance" {
 
   tags = {
     Name = "OpenText Central Private Instance"
+    Environment = var.environment
   }
 
 }
@@ -59,6 +61,7 @@ systemctl enable nginx
 
   tags = {
     Name = "OpenText West NGINX-${count.index + 1}"
+    Environment = var.environment
   }
 
 }
@@ -74,6 +77,7 @@ resource "aws_instance" "west_private_instance" {
 
   tags = {
     Name = "OpenText West Private Instance"
+    Environment = var.environment
   }
 
 }

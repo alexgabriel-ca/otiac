@@ -7,6 +7,7 @@ resource "aws_internet_gateway" "central_ig" {
   ]
   tags = {
     Name = "OpenText Central Internet Gateway"
+    Environment = var.environment
   }
 }
 
@@ -18,5 +19,6 @@ resource "aws_internet_gateway" "west_ig" {
   ]
   tags = {
     Name = "OpenText West Internet Gateway"
+    Environment = var.environment
   }
 }

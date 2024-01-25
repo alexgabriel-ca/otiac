@@ -18,6 +18,7 @@ resource "aws_route_table" "central_public_rt" {
 
   tags = {
     Name = "OpenText Central Route Table"
+    Environment = var.environment
   }
 }
 
@@ -48,6 +49,7 @@ resource "aws_route_table" "west_public_rt" {
 
   tags = {
     Name = "OpenText West Route Table"
+    Environment = var.environment
   }
 }
 
