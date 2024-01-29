@@ -13,11 +13,12 @@ The following AWS resources are created via the Terraform script, in both the ca
 4. Internet Gateway
 5. Route Table
 6. Route Table Association
-7. Security Group
-8. Network ACL
-9. Config Rules
-10. EC2 Instances with Apache and NGINX in Public Subnet
-11. EC2 instance in Prate Subnet
+7. S3 Bucket for storing Config Rule Results
+8. Security Group
+9. Network ACL
+10. Config Rules
+11. EC2 Instances with Apache and NGINX in Public Subnet
+12. EC2 instance in Private Subnet
 
 The EC2 instance public and private IP addresses are output at the end of the Terraform script so that you can verify whether Apache/NGINX were installed and configured correctly.
 
